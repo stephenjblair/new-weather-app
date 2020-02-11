@@ -1,4 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { location, forecasts } from './data/forecast.json';
+import App from './components/App';
 
-render(<div>Hello World!</div>, global.document.getElementById('root'));
+render(<App location={location} forecasts={forecasts} />, global.document.getElementById('root'));

@@ -1,11 +1,10 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const LocationDetails = props => (
+const LocationDetails = ({ city, country }) => (
   <h1 className="location-details">
-    {props.city}
-,
-{props.country}
+    {city}, {country}
   </h1>
 );
 

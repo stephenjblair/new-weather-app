@@ -14,7 +14,6 @@ body {
 .location-details {
     text-align: center;
     margin-bottom: 30px;
-
 }
 
 .location-details p {
@@ -53,7 +52,8 @@ body {
 }
 .forecast-item {
     padding: 10px;
-    text-align: center;   
+    text-align: center;
+    font-size: 1.1em;   
 } 
 .forecast-summary button {
    border-radius: 15px;
@@ -68,31 +68,37 @@ body {
 .items-container {
     border: solid 1px;
     box-shadow: 10px 10px 84px 9px rgba(0,0,0,0.75);
-    border-radius: 10px;
+    border-radius: 5px;
     width: 250px;
     margin: 10px;
 }
 .button-item {
     text-align: center;
 }
+
 #thisbit{
     margin: 30px 20px 40px 20px;
     padding: 0px 15px 15px 15px;
     border: solid 1px;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
+    line-height: 1.8;
     
 }
 
 #thisbit p {
-   font-size: 1.5em;
+   font-size: 2em;
    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
+    padding-bottom: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
+
  .forecast-details-date {
      padding-top: none;
  }
@@ -101,7 +107,7 @@ body {
     height: 75px;
     background-color: #313233;
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 5px;
     padding-bottom: 20px;
 }
 
@@ -113,7 +119,9 @@ body {
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
-    
-  
-   
+}
+
+#format-date {
+    font-size: 1.5em;
+    padding: 20px;
 }

@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const LocationDetails = ({ city, country, description }) => (
-  <div className="location-details">
+  <div className="location-details" id="location-header">
     <p>
       {city}, {country}
     </p>

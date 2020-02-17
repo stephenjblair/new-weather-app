@@ -37,7 +37,7 @@ class App extends React.Component {
 
         <ForecastSummaries
           forecasts={this.props.forecasts}
-          onForecastSelect={this.props.handleForecastSelect}
+          onForecastSelect={this.handleForecastSelect}
         />
         <ForecastDetails forecast={this.props.forecasts[0]} />
       </div>

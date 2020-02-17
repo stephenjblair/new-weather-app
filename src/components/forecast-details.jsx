@@ -8,7 +8,7 @@ const ForecastDetails = ({ forecast }) => (
   <div classsName="forecast-details" id="thisbit">
     <div className="forecast-details-date">
       <p>Forecast Details</p>
-      <span>{moment(forecast.date).format('dddd Do MMM YY')}</span>
+      <span id="format-date">{moment(forecast.date).format('dddd Do MMM YY')}</span>
       <div className="forecast-details-temperature">
         <span>
           <strong>Temperataure: </strong>

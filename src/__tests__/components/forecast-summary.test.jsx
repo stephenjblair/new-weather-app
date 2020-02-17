@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import ForecastSummary from '../../src/components/forecast-summary';
 
 it('renders the date', () => {
-  const wrapper = shallow((
+  const wrapper = shallow(
       <ForecastSummary
         date="mockDate"
         temperature="mockTemperature"

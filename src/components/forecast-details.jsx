@@ -2,29 +2,34 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 
 const ForecastDetails = ({ forecast }) => (
   <div classsName="forecast-details" id="thisbit">
     <div className="forecast-details-date">
-      <span>
-        {forecast.date}
-        {console.log(forecast)}
-      </span>
+      <p>Forecast Details</p>
+      <span>{moment(forecast.date).format('dddd Do MMM YY')}</span>
       <div className="forecast-details-temperature">
         <span>
-          Temperataure <br />
-          Max:
-          {forecast.temperature.max} <br />
-          Min:
-          {forecast.temperature.min}
+          <strong>Temperataure: </strong>
+          {`Max: 
+          ${forecast.temperature.max}    |       `}
+
+          {`Min: 
+          ${forecast.temperature.min}`}
+          <br />
         </span>
       </div>
-      <div className="forecast-details-humidity">Humidity: {forecast.humidity}</div>
+      <div className="forecast-details-humidity">
+        <strong>Humidity: </strong>
+        {forecast.humidity}
+        <br />
+      </div>
       <div className="forecast-details-wind">
-        Wind <br />
-        Speed: {forecast.wind.speed} <br />
-        Direction:
-        {forecast.wind.direction}
+        <strong>Wind: </strong>
+        {`Speed: ${forecast.wind.speed}     `}
+        {`Direction: 
+        ${forecast.wind.direction}`}
       </div>
     </div>
   </div>

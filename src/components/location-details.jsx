@@ -2,14 +2,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const LocationDetails = ({ city, country }) => (
-  <h1 className="location-details">
-    {city}, {country}
-  </h1>
+const LocationDetails = ({ city, country, description }) => (
+  <div className="location-details">
+    <p>
+      {city}, {country}
+    </p>
+    <p className="sub-text">{`The weather today is: ${description}`}</p>
+  </div>
 );
 
 LocationDetails.propTypes = {
   city: PropTypes.string.isRequired,
   country: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 export default LocationDetails;

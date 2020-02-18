@@ -11,17 +11,14 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      selectedDate: this.props.forecasts[0].date,
+      selectedDate: 0,
     };
   }
 
-  handleForecastSelect(date) {
+  handleForecastSelect = date =>
     this.setState({
       selectedDate: date,
     });
-
-    this.handleForecastSelect = this.handleForecastSelect.bind(this);
-  }
 
   render() {
     const selectedForecast = this.props.forecasts.find(
@@ -39,7 +36,7 @@ class App extends React.Component {
           forecasts={this.props.forecasts}
           onForecastSelect={this.handleForecastSelect}
         />
-        <ForecastDetails forecast={this.props.forecasts[0]} />
+        {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
       </div>
     );
   }

@@ -23,7 +23,9 @@ const ForecastSummary = ({ date, temperature, description, icon, onSelect }) => 
         <WeatherIcon name="owm" iconId={icon} />
       </div>
       <div className="button-item">
-        <button onClick={() => onSelect(date)}>More details</button>
+        <button type="button" onClick={() => onSelect(date)}>
+          More details
+        </button>
       </div>
     </div>
   </div>

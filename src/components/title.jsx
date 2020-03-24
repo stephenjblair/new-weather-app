@@ -3,7 +3,7 @@ import React from 'react';
 const Title = () => (
   <div className="main-header">
     <header>
-      <p>Weather App</p>
+      <p>5 DAY WEATHER FORECAST</p>
     </header>
   </div>
 );

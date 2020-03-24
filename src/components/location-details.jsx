@@ -2,12 +2,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const LocationDetails = ({ city, country, description }) => (
+const LocationDetails = ({ city, country }) => (
   <div className="location-details" id="location-header">
     <p>
       {city}, {country}
     </p>
-    <p className="sub-text">{`The weather today is: ${description}`}</p>
+    {/* <p className="sub-text">{`The weather today is: ${description}`}</p> */}
   </div>
 );
 
